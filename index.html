@@ -321,43 +321,40 @@
       
         
           
-            <h1 id="利用github-hexo搭建个人博客"><a href="#利用github-hexo搭建个人博客" class="headerlink" title="利用github+hexo搭建个人博客"></a>利用github+hexo搭建个人博客</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。</p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。</p>
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ol>
-<li>github<br>你需要有一个自己的<a href="https://github.com/" target="_blank" rel="external">github</a>帐号，然后新建一个仓库（==new repository==），并且命名为==username.github.io==，==username==为你注册时填写的名称。</li>
+<li>github<br>你需要有一个自己的<a href="https://github.com/" target="_blank" rel="external">github</a>帐号，然后新建一个仓库（new repository），并且命名为username.github.io，username为你注册时填写的名称。</li>
 <li>git<br>下载并安装<a href="https://git-scm.com/" target="_blank" rel="external">git</a>。</li>
-<li>nodejs<br>下载并安装<a href="https://nodejs.org/" target="_blank" rel="external">nodejs</a><h2 id="hexo安装及搭建"><a href="#hexo安装及搭建" class="headerlink" title="hexo安装及搭建"></a>hexo安装及搭建</h2></li>
-<li>hexo安装<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<li>nodejs<br>下载并安装<a href="https://nodejs.org/" target="_blank" rel="external">nodejs</a></li>
+</ol>
+<h2 id="hexo安装及搭建"><a href="#hexo安装及搭建" class="headerlink" title="hexo安装及搭建"></a>hexo安装及搭建</h2><ol>
+<li><p>hexo安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> npm install -g hexo-cli</div></pre></td></tr></table></figure>
+</li>
+<li><p>hexo初始化创建一个目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo init &lt;folder&gt;</div><div class="line"><span class="meta">$</span> cd &lt;folder&gt;</div><div class="line"><span class="meta">$</span> npm install</div></pre></td></tr></table></figure>
+</li>
+<li><p>初始完后，你的目录结构如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes</div></pre></td></tr></table></figure>
+</li>
+<li><p>新建一个页面</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo new "Hello World"</div></pre></td></tr></table></figure>
+<p> 在/source/_post里添加hello-world.md文件，之后新建的页面都将存放在此目录下。</p>
+</li>
+<li><p>生成网站</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo generate</div></pre></td></tr></table></figure>
+<p> 此时会将/source的.md文件生成到/public中，形成网站的静态文件。</p>
+</li>
+<li><p>启动服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo server -p 3000</div></pre></td></tr></table></figure>
+<p> 输入localhost:3000即可查看网站。</p>
+</li>
+<li><p>部署到github</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo deploy</div></pre></td></tr></table></figure>
+<p> 输入username.github.io即可查看网站。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>官网</p>
 </li>
 </ol>
-</blockquote>
-<ol>
-<li>hexo初始化创建一个目录</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo init &lt;folder&gt;</div><div class="line"><span class="meta">$</span> cd &lt;folder&gt;</div><div class="line"><span class="meta">$</span> npm install</div></pre></td></tr></table></figure>
-<p>初始完后，你的目录结构如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes</div></pre></td></tr></table></figure>
-<ol>
-<li>新建一个页面</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo new "Hello World"</div></pre></td></tr></table></figure>
-<p>在==/source/_post==里添加==hello-world.md==文件，之后新建的页面都将存放在此目录下。</p>
-<ol>
-<li>生成网站</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo generate</div></pre></td></tr></table></figure>
-<p>此时会将==/source==的==.md==文件生成到/public中，形成网站的静态文件。</p>
-<ol>
-<li>启动服务</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo server -p 3000</div></pre></td></tr></table></figure>
-<p>输入==<a href="http://localhost:3000==即可查看网站。" target="_blank" rel="external">http://localhost:3000==即可查看网站。</a></p>
-<ol>
-<li>部署到github</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo deploy</div></pre></td></tr></table></figure>
-<p>输入==username.github.io==即可查看网站。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>官网</p>
 
           
         
