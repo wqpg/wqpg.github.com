@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="WQ">
-<meta property="og:url" content="https://wqrd.github.io/index.html">
+<meta name="description" content="前言作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。 准备 github你需要有一个自己的github帐号，然后新建一个仓库（new repository），并且命名为username.github.io，username为你注册时填写的名称。 git下载并安装git。 nodejs下载并安装nodejs  hexo安装及搭建 hexo安装 1$ npm install -g h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用github+hexo搭建个人博客">
+<meta property="og:url" content="https://wqrd.github.io/2017/01/01/github_hexo/index.html">
 <meta property="og:site_name" content="WQ">
+<meta property="og:description" content="前言作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。 准备 github你需要有一个自己的github帐号，然后新建一个仓库（new repository），并且命名为username.github.io，username为你注册时填写的名称。 git下载并安装git。 nodejs下载并安装nodejs  hexo安装及搭建 hexo安装 1$ npm install -g h">
+<meta property="og:updated_time" content="2017-07-01T14:36:32.908Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WQ">
+<meta name="twitter:title" content="利用github+hexo搭建个人博客">
+<meta name="twitter:description" content="前言作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。 准备 github你需要有一个自己的github帐号，然后新建一个仓库（new repository），并且命名为username.github.io，username为你注册时填写的名称。 git下载并安装git。 nodejs下载并安装nodejs  hexo安装及搭建 hexo安装 1$ npm install -g h">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://wqrd.github.io/"/>
+  <link rel="canonical" href="https://wqrd.github.io/2017/01/01/github_hexo/"/>
 
 
 
 
 
-  <title>WQ</title>
+  <title>利用github+hexo搭建个人博客 | WQ</title>
   
 
 
@@ -157,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,124 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://wqrd.github.io/2017/01/02/threadpool/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qiang.Wei">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WQ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/01/02/threadpool/" itemprop="url">java集合框架</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-02T12:20:00+08:00">
-                2017-01-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="java集合框架体系"><a href="#java集合框架体系" class="headerlink" title="java集合框架体系"></a>java集合框架体系</h2><p>java集合框架大致分为List、Set和Map，List表示有序可重复集合，Set表示无序不可重复集合，Map表示有映射关系的集合。java 1.5之后添加了Queue接口，表示为队列集合。</p>
-<h2 id="java集合框架继承图"><a href="#java集合框架继承图" class="headerlink" title="java集合框架继承图"></a>java集合框架继承图</h2><p><img src="http://s15.sinaimg.cn/mw690/3d533385xcf3c8e1dda1e&amp;690" alt="继承图"></p>
-<h2 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h2><p>Collection是List、Set和Queue接口的父接口。<br>Collection接口定义的方法(jdk1.7)：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;<span class="comment">//集合元素数量</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;<span class="comment">//是否为空集合</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(Object o)</span></span>;<span class="comment">//是否包含某个对象</span></div><div class="line">Object[] toArray();<span class="comment">//转换为数组</span></div><div class="line">&lt;T&gt; T[] toArray(T[] a);<span class="comment">//如果数组a长度小于集合大小，就会根据泛型新建一个数组，然后将集合元素放在数组a中并返回</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;<span class="comment">//添加一个元素</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;<span class="comment">//移除某个元素</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">containsAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">//是否包含c集合的所有元素</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;<span class="comment">//添加一个集合</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">//移除包含在c集合中的元素，即取两个集合的差集</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">retainAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">//移除不包含在c集合中的元素，即取两个集合的交集</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>;<span class="comment">//清除元素</span></div><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span></span>;</div></pre></td></tr></table></figure></p>
-<p>未完待续</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -385,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/01/01/github_hexo/" itemprop="url">利用github+hexo搭建个人博客</a></h1>
+          <h1 class="post-title" itemprop="name headline">利用github+hexo搭建个人博客</h1>
         
 
         <div class="post-meta">
@@ -434,9 +319,7 @@
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为一个开发者，记录平时的学习历程，撰写个人博客是一个不错的选择。</p>
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ol>
 <li>github<br>你需要有一个自己的<a href="https://github.com/" target="_blank" rel="external">github</a>帐号，然后新建一个仓库（new repository），并且命名为username.github.io，username为你注册时填写的名称。</li>
 <li>git<br>下载并安装<a href="https://git-scm.com/" target="_blank" rel="external">git</a>。</li>
@@ -471,20 +354,27 @@
 </li>
 </ol>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -492,21 +382,38 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/02/threadpool/" rel="prev" title="java集合框架">
+                java集合框架 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -514,6 +421,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -533,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -589,6 +509,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo安装及搭建"><span class="nav-number">3.</span> <span class="nav-text">hexo安装及搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -702,10 +638,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
